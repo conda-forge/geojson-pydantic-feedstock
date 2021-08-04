@@ -1,5 +1,5 @@
 {% set name = "geojson-pydantic" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/developmentseed/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 6dd8b7c09a57f5ad4b29f9ee07bd969dbdc3880aaf02918179e191fc46eb2f80
+  sha256: 2ef6792f324e96391033199947120e0501ef4179402011a4ab3809fd8a0b172a
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -38,7 +38,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Pydantic data models for the GeoJSON spec'
+  summary: Pydantic data models for the GeoJSON spec
   # The remaining entries in this section are optional, but recommended.
   description: |
     geojson_pydantic provides a suite of Pydantic models matching the
