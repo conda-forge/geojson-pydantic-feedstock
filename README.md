@@ -1,11 +1,11 @@
-About geojson-pydantic
-======================
+About geojson-pydantic-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geojson-pydantic-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/developmentseed/geojson-pydantic
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geojson-pydantic-feedstock/blob/main/LICENSE.txt)
 
 Summary: Pydantic data models for the GeoJSON spec
 
