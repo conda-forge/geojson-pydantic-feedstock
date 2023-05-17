@@ -1,5 +1,5 @@
 {% set name = "geojson-pydantic" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/developmentseed/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: f2baabe68a27a9e1e004665392af0f995a145019819c556a82b13bd4c2d2c2e2
+  sha256: a8ee3354c4760e97578aebf43fc957dc62eac050b3c41703bf195ef08f90acdb
 
 build:
   noarch: python
