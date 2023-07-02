@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - pydantic
+    - pydantic >=1,<2
 
 test:
   imports:
