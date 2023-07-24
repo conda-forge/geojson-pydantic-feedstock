@@ -26,6 +26,7 @@ requirements:
 test:
   imports:
     - geojson_pydantic
+    - geojson_pydantic.base
     - geojson_pydantic.features
     - geojson_pydantic.geometries
     - geojson_pydantic.types
