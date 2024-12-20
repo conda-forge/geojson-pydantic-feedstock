@@ -1,5 +1,5 @@
 {% set name = "geojson-pydantic" %}
-{% set version = "1.1.2" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/developmentseed/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: d8e316779b12aa262afdc7865a544d7492bb84f8a472cddfbf44efbf8908438b
+  sha256: 88cf3df946e9ce5eb7c498ef38e569b7e8e32931f2633a7e99c5541fc548dc23
 
 build:
   noarch: python
@@ -17,10 +17,10 @@ build:
 requirements:
   host:
     - flit-core >=3.2,<4
-    - python >=3.8
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - pydantic >=2
 
 test:
@@ -32,6 +32,7 @@ test:
     - geojson_pydantic.types
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
