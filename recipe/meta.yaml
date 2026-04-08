@@ -16,7 +16,7 @@ build:
 
 requirements:
   host:
-    - flit-core >=3.2,<4
+    - hatchling
     - python {{ python_min }}
     - pip
   run:
