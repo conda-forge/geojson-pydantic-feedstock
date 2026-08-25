@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - pydantic >=2
+    - pydantic >=2,<3
 
 test:
   imports:
